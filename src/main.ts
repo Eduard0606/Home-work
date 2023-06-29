@@ -32,25 +32,29 @@ const plus = document.getElementById('plus') as any
 const multi = document.getElementById('multi') as any
 const del = document.getElementById('del') as any
 const submit = document.getElementById('submit') as any
-let action = "+"
+let action = ""
 
 
-if (submit) submit.onclick = function(){
+submit.onclick = function(){
+
   if (action == "+"){
-  const sum = Number(input1?.value) + Number(input2?.value)
+  const sum = Number(input1.value) + Number(input2.value)
   result.textContent = sum
   }
-if (action == "-"){
+
+  else if (action == "-"){
   const sum = Number(input1.value) - Number(input2.value)
-result.textContent = sum
+  result.textContent = sum
 }
-if (action == "*") {
+
+  else if (action == "*"){
   const sum = Number(input1.value)* Number(input2.value)
-result.textContent = sum
+  result.textContent = sum
 }
-if (action == "/") {
+
+  else if (action == "/"){
   const sum = Number(input1.value)/ Number(input2.value)
-result.textContent = sum
+  result.textContent = sum
 }
 }
 
@@ -63,7 +67,7 @@ multi.onclick = function(){
 }
 
 plus.onclick = function(){
-  action = "*"
+  action = "+"
 }
 
 del.onclick = function(){
