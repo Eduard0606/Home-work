@@ -4,10 +4,23 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/main.ts" defer></script>
     <title>Vite + TS</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <h1>Калькулятор</h1>
+<div class="cont">
+     <input class="form-control input1" id="input1" type="text" value="6">
+     <input class="form-control input2" id="input2" type="text" value="11">
+<div class="cont2">
+      <button class="plus" id="plus">+</button>
+      <button class="minus" id="minus">-</button>
+      <button class="multi" id="multi">*</button>
+      <button class="del" id="del">/</button>
+  </div>   
+  <button class="submit" id="submit">Расчитать</button>
+  <div class="result" id="result">59</div>
+</div>
   </body>
 </html>
