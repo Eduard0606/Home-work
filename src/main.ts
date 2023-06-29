@@ -197,5 +197,5 @@ multi.onclick = function(){
     action = "*"
 }
 del.onclick = function(){
-    action = "/"
+    action = "/" 
 }
