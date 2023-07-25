@@ -1,3 +1,3 @@
 export default {
-    base:  '/ts/'
+    base:  '/Home-work/'
 }
